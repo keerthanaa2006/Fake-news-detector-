@@ -5,7 +5,7 @@ import pickle
 model = pickle.load(open("model/model.pkl", "rb"))
 vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
 
-API_KEY = "f8b436b068df40a6bc1959ed114812ff"
+API_KEY = "YOUR_NEWS_API_KEY"
 
 url = f"https://newsapi.org/v2/top-headlines?language=en&pageSize=10&apiKey={API_KEY}"
 
@@ -32,4 +32,5 @@ else:
 
         print("Headline:", headline)
         print("Prediction:", result)
+
         print("-----------------------------")
